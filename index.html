@@ -142,29 +142,29 @@
           $(".modeltitlediv").css("opacity", 1 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 1 - $(window).scrollTop() / 260);
              
-             
+
     
             }
             //  model y fade
-            if($(window).scrollTop()<900 && $(window).scrollTop()>280){
+            if($(window).scrollTop()>280){
               $(".modelName").html("Model Y")
               $(".modeltitlediv").css("opacity", -1.5 + $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", -1.5 +$(window).scrollTop() / 260);
               //fade out
-             if($(window).scrollTop()>640 && $(window).scrollTop()<950){
+             if($(window).scrollTop()>640){
               $(".modeltitlediv").css("opacity", 3.8 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 3.8 - $(window).scrollTop() / 260);
             }
              }
            
              // model s
-             if($(window).scrollTop()>1000 && $(window).scrollTop()<1200){
+             if($(window).scrollTop()>1000){
               $(".modelName").html("Model S")
-              $(".modeltitlediv").css("opacity", -3.7+ $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", -3.5+ $(window).scrollTop() / 260);
+              $(".modeltitlediv").css("opacity", -4.6+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -4.6+ $(window).scrollTop() / 260);
  }
              //fade out
-             if($(window).scrollTop()>1300 && $(window).scrollTop()<1800){
+             if($(window).scrollTop()>1470){
               $(".modeltitlediv").css("opacity", 6 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 6 - $(window).scrollTop() / 260);
            
@@ -188,7 +188,7 @@
             
   });
                $(".downarrow").click(function(){
- alert ( 1 - $(window).scrollTop() / 260);
+ alert (  6 - $(window).scrollTop() / 260);
  
  })
  
