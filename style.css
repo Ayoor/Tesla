@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.homeSection, .modely,.models,.modelx{
+.homeSection, .modely,.models,.modelx, .solarpanels, .solarroofs, .accessories{
   
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +28,16 @@ body{
 .modelx{background-image: url("images/Homepage-Model-X-Desktop-LHD.jpg");
 
 }
+
+.solarpanels{background-image: url('images/_25-HP-SolarPanels-D.jpg');
+
+}
+.solarroofs{background-image: url("images/Homepage-SolarRoof-Desktop-Global.jpg");}
+
+.accessories{background-image: url("images/accesories.jpg");}
+
+
+
 /* navigation bar start*/
 
 .mainNavBar{

@@ -37,7 +37,7 @@
                         <ul class="nav nav-pills modelsNavItem">
                             
                             <li class="nav-item">
-                              <a class="nav-link "  href="#">Model </a>
+                              <a class="nav-link "  href="#">Model 3</a>
                             </li>
                            
                             <li class="nav-item">
@@ -128,7 +128,30 @@
        
    </div>
    </section>
+ 
+   <!-- Solar Panels -->
+   <section class="solarpanels">
+    <div class="downarrow text-center">
+      <button><i class="fa-solid fa-chevron-down"></i></button>
+       
+   </div>
+   </section> 
    
+   <!-- Solar Roofs -->
+   <section class="solarroofs">
+    <div class="downarrow text-center">
+      <button><i class="fa-solid fa-chevron-down"></i></button>
+       
+   </div>
+   </section> 
+   
+   <!-- Accessories-->
+   <section class="accessories">
+    <div class="downarrow text-center">
+      <button><i class="fa-solid fa-chevron-down"></i></button>
+       
+   </div>
+   </section>
     <!-- JavaScript Bundle with Popper -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -136,59 +159,99 @@
     <script type="text/javascript">
         
         $(window).scroll(function(){
-    //  model 3 fade
+    //  model 3 fade out
           if($(window).scrollTop()<270){
+              var fader = $(window).scrollTop() +1;
           $(".modelName").html("Model 3")
           $(".modeltitlediv").css("opacity", 1 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 1 - $(window).scrollTop() / 260);
              
+              $(".modeltitlediv").css("background-color", "red");
 
     
             }
-            //  model y fade
-            if($(window).scrollTop()>280){
+            //  model y fade in
+            if($(window).scrollTop()>265){
               $(".modelName").html("Model Y")
               $(".modeltitlediv").css("opacity", -1.5 + $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", -1.5 +$(window).scrollTop() / 260);
-              //fade out
-             if($(window).scrollTop()>640){
-              $(".modeltitlediv").css("opacity", 3.8 - $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", 3.8 - $(window).scrollTop() / 260);
-            }
-             }
-           
-             // model s
-             if($(window).scrollTop()>1000){
-              $(".modelName").html("Model S")
-              $(".modeltitlediv").css("opacity", -4.6+ $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", -4.6+ $(window).scrollTop() / 260);
- }
-             //fade out
-             if($(window).scrollTop()>1470){
-              $(".modeltitlediv").css("opacity", 6 - $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", 6 - $(window).scrollTop() / 260);
-           
-             }
-             //  model x fade
-            if($(window).scrollTop()>1600 ){
-              $(".modelName").html("Model X")
-              $(".modeltitlediv").css("opacity", -6.6+ $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", -6.6+ $(window).scrollTop() / 260);
-              } 
-            
-            
-     
-
+             $(".modeltitlediv").css("background-color", "yellow");
              
-              //fade out
-             if($(window).scrollTop()>640 && $(window).scrollTop()<950){
-              $(".modeltitlediv").css("opacity", 3.8 - $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", 3.8 - $(window).scrollTop() / 260);
+             //model y fade out
+             if($(window).scrollTop()>710){
+              $(".modeltitlediv").css("opacity", 3.7 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 3.7- $(window).scrollTop() / 260);
+             $(".modeltitlediv").css("background-color", "blue");
             }
+             }
+           
+             // model s fade in
+             if($(window).scrollTop()>1000){
+              // var fader = $(window).scrollTop() * (-1);
+              $(".modelName").html("Model S")
+              $(".modeltitlediv").css("opacity", -3.8+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -3.8+ $(window).scrollTop() / 260);
+             $(".modeltitlediv").css("background-color", "purple");
+ }
+             //model s fade out
+             if($(window).scrollTop()>1470){
+              $(".modeltitlediv").css("opacity", 6.3 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 6.3 - $(window).scrollTop() / 260);
+             $(".modeltitlediv").css("background-color", "brown");
+             }
+           
+             //  model x fade in
+            if($(window).scrollTop()>1700 ){
+              $(".modelName").html("Model X")
+              $(".modeltitlediv").css("opacity", -6.6 + $(window).scrollTop() / 260);
+              $(".buttondiv").css("opacity", -6.6+ $(window).scrollTop() / 260);
+              $(".modeltitlediv").css("background-color", "grey");
+             
+            } 
+              
+              //model x fade out
+             if( $(window).scrollTop()>2300 ){
+              $(".modeltitlediv").css("opacity", 9.6 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 9.6 - $(window).scrollTop() / 260);
+             $(".modeltitlediv").css("background-color", "pink");
+            }
+            
+
+             //  Solar Panels fade in
+             
+            if($(window).scrollTop()>2500 ){
+              $(".modelName").html("Solar Panels")
+              $(".modeltitlediv").css("opacity", -9.5+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -9.5+ $(window).scrollTop() / 260);
+              } 
+              
+            //  Solar Panels fade out
+             if($(window).scrollTop()>3100){
+              $(".modeltitlediv").css("opacity", 12.7 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 12.7 - $(window).scrollTop() / 260);
+            }
+
+
+
+ //  Solar Roofs fade in
+            if($(window).scrollTop()>3300 ){
+              $(".modelName").html("Solar Roofs")
+              $(".modeltitlediv").css("opacity", -12.8+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -12.8+ $(window).scrollTop() / 260);
+              } 
+              
+            //   // Solar Roofs fade out
+             if($(window).scrollTop()>3900){
+              $(".modeltitlediv").css("opacity", 16 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 16 - $(window).scrollTop() / 260);
+            }
+
+
+
             
   });
                $(".downarrow").click(function(){
- alert (  6 - $(window).scrollTop() / 260);
+ alert ($(window).scrollTop());
  
  })
  
