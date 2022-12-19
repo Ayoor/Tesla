@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=IBM+Plex+Sans+Thai+Looped:wght@300&family=Montserrat:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/8ea43b1ea3.js" crossorigin="anonymous"></script>
+
+    <title>Electric Cars, Solar and Clean Energy| Tesla</title>
+    
+</head>
+<body>
+    <!-- landing page model 3-->
+    <section class="homeSection">
+
+                 <div class="container-fluid mainNavBar">
+                    
+                    <div id="homeLogoDiv">
+                        
+                        <a href=""> <img class="logoimg" src="images/tesla logo.png" alt="tesla logo"> </a> 
+                    </div>
+                    
+                    <div id="modelsDiv">
+                        <ul class="nav nav-pills modelsNavItem">
+                            
+                            <li class="nav-item">
+                              <a class="nav-link "  href="#">Model </a>
+                            </li>
+                           
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Model Y</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Model S</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" >Model X</a>
+                            </li>
+                          
+                         
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" >Solar Roof</a>
+                          </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >Solar Panel</a>
+                          </li>
+                        </ul>
+                    </div>
+                    <div id="extrasDiv">
+                    
+                        <ul class="nav nav-pills ">
+                            
+                            <li class="nav-item">
+                              <a class="nav-link "  href="#">Shop</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Account</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Menu</a>
+                            </li>
+                        </ul>
+                </div>
+               
+            </div>
+   
+            <div class="jumbotron text-center">
+               <div class="container">
+
+                <div class="modeltitlediv">
+                  <h1 class="display-6 modelName" style="font-weight: 500;">Model </h1>
+                   <a href="" class="testdrive"> Schedule a Test Drive</a>
+                </div>
+                
+                <div class="buttondiv ">
+                  <a href="#" class="customOrder">Custom Order</a>
+                  <a href="#" class="inventory">Existing Inventory</a>
+                </div>
+               
+              </div>
+             
+                
+            </div>
+               <div class="downarrow text-center">
+                   <button><i class="fa-solid fa-chevron-down"></i></button>
+                    
+                </div>
+</section>
+
+   <!-- model Y -->
+   
+   <section class="modely">
+    <div class="downarrow text-center">
+      <button><i class="fa-solid fa-chevron-down"></i></button>
+       
+   </div>
+   </section>
+   
+   <!-- model s -->
+   <section class="models"><div class="downarrow text-center">
+    <button><i class="fa-solid fa-chevron-down"></i></button>
+     
+ </div>
+</section>
+ 
+<!-- model x -->
+   <section class="modelx">
+    <div class="downarrow text-center">
+      <button><i class="fa-solid fa-chevron-down"></i></button>
+       
+   </div>
+   </section>
+   
+    <!-- JavaScript Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        
+        $(window).scroll(function(){
+    //  model 3 fade
+          if($(window).scrollTop()<270){
+          $(".modelName").html("Model 3")
+          $(".modeltitlediv").css("opacity", 1 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 1 - $(window).scrollTop() / 260);
+             
+             
+    
+            }
+            //  model y fade
+            if($(window).scrollTop()<900 && $(window).scrollTop()>280){
+              $(".modelName").html("Model Y")
+              $(".modeltitlediv").css("opacity", -1.5 + $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -1.5 +$(window).scrollTop() / 260);
+              //fade out
+             if($(window).scrollTop()>640 && $(window).scrollTop()<950){
+              $(".modeltitlediv").css("opacity", 3.8 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 3.8 - $(window).scrollTop() / 260);
+            }
+             }
+           
+             // model s
+             if($(window).scrollTop()>1000 && $(window).scrollTop()<1200){
+              $(".modelName").html("Model S")
+              $(".modeltitlediv").css("opacity", -3.7+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -3.5+ $(window).scrollTop() / 260);
+ }
+             //fade out
+             if($(window).scrollTop()>1300 && $(window).scrollTop()<1800){
+              $(".modeltitlediv").css("opacity", 6 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 6 - $(window).scrollTop() / 260);
+           
+             }
+             //  model x fade
+            if($(window).scrollTop()>1600 ){
+              $(".modelName").html("Model X")
+              $(".modeltitlediv").css("opacity", -6.6+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -6.6+ $(window).scrollTop() / 260);
+              } 
+            
+            
+     
+
+             
+              //fade out
+             if($(window).scrollTop()>640 && $(window).scrollTop()<950){
+              $(".modeltitlediv").css("opacity", 3.8 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 3.8 - $(window).scrollTop() / 260);
+            }
+            
+  });
+               $(".downarrow").click(function(){
+ alert ( 1 - $(window).scrollTop() / 260);
+ 
+ })
+ 
+             
+             
+
+
+
+  
+  
+  
+    </script>
+</body>
+</html>
