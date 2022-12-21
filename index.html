@@ -133,7 +133,11 @@
    
    <!-- Accessories-->
    <section class="accessories">
-    
+    <footer>
+      <ul>
+        
+      </ul>
+    </footer>
    </section>
     <!-- JavaScript Bundle with Popper -->
     
@@ -225,7 +229,7 @@
               } 
               
             //   // Solar Roofs fade out
-             if($(window).scrollTop()>3400){
+             if($(window).scrollTop()>3300){
               $(".modeltitlediv").css("opacity", 14.7 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 14.7 - $(window).scrollTop() / 260);
 
@@ -233,13 +237,12 @@
             }
 
             // Accessories fade in
-            if($(window).scrollTop()>3800 ){
+            if($(window).scrollTop()>3850 ){
               $(".modelName").html("Accessories")
-              $(".customOrder").html("Shop Now")
+              $(".testdrive2").html("")
               // $(".inventory").css("display", "none");
               // $(".testdrive").css("display", "none");
-              $(".inventory").hide();
-              $(".testdrive").hide()
+              
               $(".modeltitlediv").css("opacity", -14.6+ $(window).scrollTop() / 260);
               $(".buttondiv").css("opacity", -14.6+ $(window).scrollTop() / 260);
               } 
@@ -250,9 +253,12 @@
               $(".testdrive").show();
 
               }
-              if ($(window).scrollTop()>2500){
+              if ($(window).scrollTop()>3800){
                 
-                
+                $(".inventory").hide();
+               $(".testdrive").hide();
+               $(".customOrder").html("Shop Now")
+               
               }
 
               if ($(window).scrollTop()<=2500){
