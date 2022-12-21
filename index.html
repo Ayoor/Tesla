@@ -24,6 +24,7 @@
 </head>
 <body>
     <!-- landing page model 3-->
+    
     <section class="homeSection">
 
                  <div class="container-fluid mainNavBar">
@@ -86,13 +87,13 @@
                <div class="container">
 
                 <div class="modeltitlediv">
-                  <h1 class="display-6 modelName" style="font-weight: 500;">Model </h1>
+                  <h1 class="display-6 modelName" style="font-weight: 500;">Model 3</h1>
                    <a href="" class="testdrive"> Schedule a Test Drive</a>
                 </div>
                 
                 <div class="buttondiv ">
-                  <a href="#" class="customOrder">Custom Order</a>
-                  <a href="#" class="inventory">Existing Inventory</a>
+                  <a  class="customOrder">Custom Order</a>
+                  <a  class="inventory">Existing Inventory</a>
                 </div>
                
               </div>
@@ -100,7 +101,7 @@
                 
             </div>
                <div class="downarrow text-center">
-                   <button><i class="fa-solid fa-chevron-down"></i></button>
+                   <a href=""><i class="fa-solid fa-chevron-down"></i></a>
                     
                 </div>
 </section>
@@ -108,49 +109,31 @@
    <!-- model Y -->
    
    <section class="modely">
-    <div class="downarrow text-center">
-      <button><i class="fa-solid fa-chevron-down"></i></button>
-       
-   </div>
+    
    </section>
    
    <!-- model s -->
-   <section class="models"><div class="downarrow text-center">
-    <button><i class="fa-solid fa-chevron-down"></i></button>
-     
- </div>
+   <section class="models">
 </section>
  
 <!-- model x -->
    <section class="modelx">
-    <div class="downarrow text-center">
-      <button><i class="fa-solid fa-chevron-down"></i></button>
-       
-   </div>
+    
    </section>
  
    <!-- Solar Panels -->
    <section class="solarpanels">
-    <div class="downarrow text-center">
-      <button><i class="fa-solid fa-chevron-down"></i></button>
-       
-   </div>
+    
    </section> 
    
    <!-- Solar Roofs -->
    <section class="solarroofs">
-    <div class="downarrow text-center">
-      <button><i class="fa-solid fa-chevron-down"></i></button>
-       
-   </div>
+    
    </section> 
    
    <!-- Accessories-->
    <section class="accessories">
-    <div class="downarrow text-center">
-      <button><i class="fa-solid fa-chevron-down"></i></button>
-       
-   </div>
+    
    </section>
     <!-- JavaScript Bundle with Popper -->
     
@@ -161,12 +144,11 @@
         $(window).scroll(function(){
     //  model 3 fade out
           if($(window).scrollTop()<270){
-              var fader = $(window).scrollTop() +1;
+              // var fader = $(window).scrollTop() +1;
           $(".modelName").html("Model 3")
           $(".modeltitlediv").css("opacity", 1 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 1 - $(window).scrollTop() / 260);
              
-              $(".modeltitlediv").css("background-color", "red");
 
     
             }
@@ -175,13 +157,11 @@
               $(".modelName").html("Model Y")
               $(".modeltitlediv").css("opacity", -1.5 + $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", -1.5 +$(window).scrollTop() / 260);
-             $(".modeltitlediv").css("background-color", "yellow");
              
              //model y fade out
              if($(window).scrollTop()>710){
               $(".modeltitlediv").css("opacity", 3.7 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 3.7- $(window).scrollTop() / 260);
-             $(".modeltitlediv").css("background-color", "blue");
             }
              }
            
@@ -191,13 +171,11 @@
               $(".modelName").html("Model S")
               $(".modeltitlediv").css("opacity", -3.8+ $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", -3.8+ $(window).scrollTop() / 260);
-             $(".modeltitlediv").css("background-color", "purple");
  }
              //model s fade out
              if($(window).scrollTop()>1470){
               $(".modeltitlediv").css("opacity", 6.3 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 6.3 - $(window).scrollTop() / 260);
-             $(".modeltitlediv").css("background-color", "brown");
              }
            
              //  model x fade in
@@ -205,7 +183,6 @@
               $(".modelName").html("Model X")
               $(".modeltitlediv").css("opacity", -6.6 + $(window).scrollTop() / 260);
               $(".buttondiv").css("opacity", -6.6+ $(window).scrollTop() / 260);
-              $(".modeltitlediv").css("background-color", "grey");
              
             } 
               
@@ -213,48 +190,96 @@
              if( $(window).scrollTop()>2300 ){
               $(".modeltitlediv").css("opacity", 9.6 - $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", 9.6 - $(window).scrollTop() / 260);
-             $(".modeltitlediv").css("background-color", "pink");
+            
             }
             
 
              //  Solar Panels fade in
              
             if($(window).scrollTop()>2500 ){
-              $(".modelName").html("Solar Panels")
+              $(".modelName").html("Solar Panels");
               $(".modeltitlediv").css("opacity", -9.5+ $(window).scrollTop() / 260);
              $(".buttondiv").css("opacity", -9.5+ $(window).scrollTop() / 260);
+
+              
+                $(".testdrive").removeAttr("href"); 
+                $(".testdrive").addClass("testdrive2");
+                $(".testdrive").removeClass("testdrive");
+            
               } 
               
             //  Solar Panels fade out
-             if($(window).scrollTop()>3100){
-              $(".modeltitlediv").css("opacity", 12.7 - $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", 12.7 - $(window).scrollTop() / 260);
+             if($(window).scrollTop()>2800){
+              $(".modeltitlediv").css("opacity", 11.9 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 11.9 - $(window).scrollTop() / 260);
             }
-
+            $(".testdrive2").html("Lowest Cost Solar Panels in America")
 
 
  //  Solar Roofs fade in
-            if($(window).scrollTop()>3300 ){
+            if($(window).scrollTop()>3000 ){
               $(".modelName").html("Solar Roofs")
-              $(".modeltitlediv").css("opacity", -12.8+ $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", -12.8+ $(window).scrollTop() / 260);
+              $(".modeltitlediv").css("opacity", -11.8+ $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", -11.8+ $(window).scrollTop() / 260);
+              $(".testdrive2").html("Produce Clean Energy From Your Roof")
               } 
               
             //   // Solar Roofs fade out
-             if($(window).scrollTop()>3900){
-              $(".modeltitlediv").css("opacity", 16 - $(window).scrollTop() / 260);
-             $(".buttondiv").css("opacity", 16 - $(window).scrollTop() / 260);
-            }
-
-
+             if($(window).scrollTop()>3400){
+              $(".modeltitlediv").css("opacity", 14.7 - $(window).scrollTop() / 260);
+             $(".buttondiv").css("opacity", 14.7 - $(window).scrollTop() / 260);
 
             
+            }
+
+            // Accessories fade in
+            if($(window).scrollTop()>3800 ){
+              $(".modelName").html("Accessories")
+              $(".customOrder").html("Shop Now")
+              // $(".inventory").css("display", "none");
+              // $(".testdrive").css("display", "none");
+              $(".inventory").hide();
+              $(".testdrive").hide()
+              $(".modeltitlediv").css("opacity", -14.6+ $(window).scrollTop() / 260);
+              $(".buttondiv").css("opacity", -14.6+ $(window).scrollTop() / 260);
+              } 
+
+              if ($(window).scrollTop()<=4200 ){
+                $(".customOrder").html("Order Now")
+              $(".inventory").show();
+              $(".testdrive").show();
+
+              }
+              if ($(window).scrollTop()>2500){
+                
+                
+              }
+
+              if ($(window).scrollTop()<=2500){
+                $(".testdrive2").addClass("testdrive");
+                $(".testdrive2").html("Schedule a Test Drive");
+                $(".testdrive2").removeClass("testdrive2");
+                
+
+                
+              }
+
+
+
+
+         
   });
-               $(".downarrow").click(function(){
- alert ($(window).scrollTop());
+               $(".customOrder").click(function(){
+ alert ( $(window).scrollTop());
+ 
+ })
+
+ $(".inventory").click(function(){
+ alert (-14.6+ $(window).scrollTop() / 260);
  
  })
  
+
              
              
 
