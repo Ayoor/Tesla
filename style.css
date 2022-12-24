@@ -219,3 +219,33 @@ body{
 .opacityclass{
     opacity: 0;
 }
+
+/* footer */
+footer{
+    
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #535151;;
+    font-size: 90%;
+}
+footer a:hover{
+    color: #535151;
+    text-decoration: none;
+}
+.accessories{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer li{
+    margin-left: 20px;
+}
