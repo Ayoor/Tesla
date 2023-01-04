@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .homeSection, .modely,.models,.modelx, .solarpanels, .solarroofs, .accessories{
@@ -9,7 +10,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-    min-height: 102vh;
+    min-height: 100vh;
     width: 100%;
     
 }
@@ -60,6 +61,23 @@ body{
     color: #3b3636;
     padding: 5px 15px;
     font-weight: 500;
+}
+
+#menu{
+    color: #3b3636;
+    padding: 5px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 90%;
+    display: none;
+}
+
+#menu:hover{
+   
+    background-color: #9aa2aa ;
+    border-radius: 6px;
+    padding: 5px 15px;
+    
 }
 .nav-pills a:hover{
     color: #3b3636;
@@ -198,14 +216,13 @@ body{
 .inventory:hover{
     color: #3b3636;
     border-radius: 7px;
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow:  6px 6px 26px #aaaaaa,
-                 -6px -6px 26px #ffffff;
+    background: linear-gradient(145deg, #f0f0f0);
+    
 }
 
 .downarrow{
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 7rem;
     color: #2D3034;
 }
 .downarrow a:hover{
@@ -213,6 +230,40 @@ body{
 }
 .downarrow a{
     color: #2D3034;
+   
+}
+
+.downarrow i{
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+   
+ 0%{
+    transform: translateY(0px);
+ } 
+  
+ 20%{
+    transform: translateY(5px);
+ } 
+ 30%{
+    transform: translateY(0px);
+ } 
+ 50%{
+    transform: translateY(7px);
+ } 
+ 70%{
+    transform: translateY(5px);
+ }   
+ 80%{
+    transform: translateY(7px);
+ } 
+ 90%{
+    transform: translateY(6px);
+ } 
+ 100%{
+    transform: translateY(0px);
+ } 
 }
 /* jumbotron end */
 
@@ -221,9 +272,9 @@ body{
 }
 
 /* footer */
-footer{
+/* footer{
     
-}
+} */
 footer ul{
     list-style-type: none;
     display: flex;
@@ -249,3 +300,72 @@ footer a:hover{
 footer li{
     margin-left: 20px;
 }
+
+/* .sidebar */
+.sidepanel{
+    width: 23%;
+    position: absolute;
+    right: -20rem;
+    background-color: white;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5rem 1rem 0 1.5rem; */
+    /* padding: 30px; */
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+#panellist a{
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: #535151;
+    font-weight: 550;
+    padding: 6px 0 6px 12px;
+    border-radius: 7px;
+    width: 90%;
+}
+
+#panellist a:hover{
+    color: #3b3636;
+    background-color: #F2F2F2;
+    
+}
+
+#closediv button{
+background-size: cover;
+background-image: url(images/2931151_close_delete_exit_remove_x_icon.png);
+height: 15px;
+width: 15px;
+border: none;
+background-color: transparent;
+}
+
+#closediv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+    margin: 2rem 0 2rem 0;
+    border: 1px dot;
+}
+
+#panellist{
+   
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    margin-left: 2.7rem;
+    /* margin-top: 4rem; */
+}
+
+@media (max-width: 1180px){
+    #menu{
+        display: block;
+    }
+    #modelsDiv, #extrasDiv{
+display: none;
+    }
+}
+/* NRNmqYSnPkqK */
