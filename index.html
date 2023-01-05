@@ -36,7 +36,7 @@
 
                     <div id="menuDiv">
                     
-                        <a href="#" id="menu">Menu</a>
+                      <a  class="menutoggle" id="menutoggle" href="#">Menu</a>
                          
               </div>
                     
@@ -82,27 +82,27 @@
                             </li>
                             
                             <li class="nav-item">
-                              <a class="nav-link" id="menutoggle" href="#">Menu</a>
+                              <a class="nav-link menutoggle" href="#">Menu</a>
                             </li>
                         </ul>
                 </div>
                
             </div>
-
+<div class="blur"></div>
             <!-- side bar -->
    <aside class="sidepanel">
 <div id="closediv">
-  <button></button>
+  <button id="closebutton"></button>
 
 </div>
     
     <div id="panellist"> 
-          <a href="#">Model S</a> 
-          <a href="#">Model 3</a>
-          <a href="#">Model X</a>
-          <a href="#">Model Y</a>
-          <a href="#">Solar Roof</a>
-          <a href="#">Solar Panels</a>
+          <a href="#" class="carmodel">Model S</a> 
+          <a href="#" class="carmodel">Model 3</a>
+          <a href="#" class="carmodel">Model X</a>
+          <a href="#" class="carmodel">Model Y</a>
+          <a href="#" class="carmodel">Solar Roof</a>
+          <a href="#" class="carmodel">Solar Panels</a>
           <a href="#">Existing Inventory</a>
           <a href="#">Used Inventory</a>
           <a href="#">Trade-In</a>
@@ -130,7 +130,7 @@
                    <a href="drive.html" class="testdrive"> Schedule a Test Drive</a>
                 </div>
                 
-                <div class="buttondiv ">
+                <div class="buttondiv">
                   <a href="customorder.html"  class="customOrder">Custom Order</a>
                   <a href="inventory.html" class="inventory">Existing Inventory</a>
                 </div>
@@ -140,7 +140,7 @@
                 
             </div>
                <div class="downarrow text-center">
-                   <a href="#modely" id="downarrow"><i class="fa-solid fa-chevron-down"></i></a>
+                   <a href="#modely" id="downarrow"><i class="fa-solid fa-chevron-down fa-md"></i></a>
                     
                 </div>
 </section>
@@ -202,10 +202,6 @@
         });
       });
     </script>
-    <script>
-      $("#menutoggle").click(function(){
-        alert("Worked!")
-      })
-    </script>
+    
 </body>
 </html>

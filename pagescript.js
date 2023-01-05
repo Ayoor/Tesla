@@ -150,4 +150,30 @@ $(function() {
     });
   });
 
+  // toggle
+$(".menutoggle").click(function(){
+if ($(window).width()<=1180){
+  $(".carmodel").show();
+}
+else {
+  $(".carmodel").hide();
+}
+$("body").css("overflow-y", "hidden")
+  $(".sidepanel").animate({right: 0}, 500);
+  $(".blur").css("display", "block")
+  return false; // prevents page from scrolling to the top after executing command
+});
+function closepanel(){
+  $(".sidepanel").animate({right: '-80%'}, 500);
+  $(".blur").css("display", "none")
+$("body").css("overflow-y", "scroll");
+return false; // prevents page from scrolling to the top after executing command
+}
+$("#closebutton").click(function (){
 
+ closepanel();
+})
+
+$(".blur").click(function(){
+  closepanel();
+})

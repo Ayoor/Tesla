@@ -1,3 +1,8 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 body{
     margin: 0;
     padding: 0;
@@ -62,23 +67,26 @@ body{
     padding: 5px 15px;
     font-weight: 500;
 }
-
-#menu{
+#menutoggle{
+    font-size: 85%;
     color: #3b3636;
     padding: 5px 15px;
     font-weight: 500;
     text-decoration: none;
-    font-size: 90%;
+}
+
+#menutoggle:hover{
+    color: #3b3636;
+    background-color: #8d949b ;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+#menudiv{
+   
     display: none;
 }
 
-#menu:hover{
-   
-    background-color: #9aa2aa ;
-    border-radius: 6px;
-    padding: 5px 15px;
-    
-}
+
 .nav-pills a:hover{
     color: #3b3636;
     background-color: #BFCBD6 ;
@@ -184,7 +192,7 @@ body{
 .customOrder , .inventory{
     border-radius: 7px;
     text-decoration: none;
-    padding: 9px 70px;
+    
     margin-left: 15px;
     font-size: 90%;
     font-weight: 500;
@@ -197,7 +205,7 @@ body{
         text-decoration: none;
         color: white;
         margin-left: 15px;
-    
+        padding: 11px 84px;
 }
 .customOrder:hover{
     color: white;
@@ -211,7 +219,7 @@ body{
     text-decoration: none;
     color: #3b3636;
     margin-left: 15px;
-    
+    padding: 9px 70px;
 }
 .inventory:hover{
     color: #3b3636;
@@ -222,7 +230,7 @@ body{
 
 .downarrow{
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 8rem;
     color: #2D3034;
 }
 .downarrow a:hover{
@@ -304,10 +312,10 @@ footer li{
 /* .sidebar */
 .sidepanel{
     width: 23%;
-    position: absolute;
-    right: -20rem;
+    position: fixed;
+    right: -80%;
     background-color: white;
-    z-index: 4;
+    z-index: 6;
     display: flex;
     flex-direction: column;
     /* padding: 5rem 1rem 0 1.5rem; */
@@ -360,12 +368,74 @@ background-color: transparent;
     /* margin-top: 4rem; */
 }
 
+#menuDiv{
+    display: none;
+}
 @media (max-width: 1180px){
-    #menu{
+    #menuDiv{
         display: block;
     }
     #modelsDiv, #extrasDiv{
 display: none;
     }
+    .logoimg{
+        width: 45%;
+        
+    }
+
+    #homeLogoDiv{
+        width: 60%;
+        margin-right: 30px;
+        /* border: 1px solid green; */
+    }
+.downarrow{
+    display: none;
+}
+
+.mainNavBar{
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+   
+    .buttondiv{
+        display: flex;
+         flex-direction: column;
+         width: 90%;
+        height: 100px;
+        justify-content: space-between;
+        margin: 0 auto;
+        /*  align-items: center;
+        
+        box-sizing: border-box;
+        margin-bottom: 40px; */
+    }
+ .sidepanel{
+    width: 30%;
+ }  
+    /* .inventory{
+    margin: 7px 0;
+   } */
+}
+
+@media (max-width: 850px) {
+    .sidepanel{
+        width: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .sidepanel{
+        width: 65%;
+    }
+}
+
+
+/* blur effect */
+.blur{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .35);
+    backdrop-filter: blur(5px);
+    z-index: 5;
+    display: none;
 }
 /* NRNmqYSnPkqK */
